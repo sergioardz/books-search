@@ -1,4 +1,4 @@
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -21,33 +21,4 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-} */
-
-.hero {
-  background: url('images/bookshelf.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  display: table;
-  width: 100%;
-  padding-top: 120px;
-  }
-
-  h1 {
-    font-size: calc(1em + 1vw);
-    text-align: center;
-  }
-
-  h2 {
-    font-size: calc(0.5em + 1vw);
-    text-align: center;
-  }
-
-  #search {
-    padding: 5px;
-  }
-
-  /* .nav {
-    position: fixed;
-  } */
+}
