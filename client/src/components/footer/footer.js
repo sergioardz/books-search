@@ -7,7 +7,7 @@ const Footer = props => (
     <div>
         <p>Enjoy this app? Get to know the&nbsp;
             <a href="https://sergioardz.github.io/Portfolio/" target="_blank">Author</a> and checkout the&nbsp;
-            <a href="https://github.com/sergioardz" target="_blank">Github</a> Repository.
+            <a href="https://github.com/sergioardz/books-search" target="_blank">Github</a> Repository.
         </p>
     </div>
     </footer>
