@@ -31,7 +31,7 @@ It is very easy and intuitive to use this app, the user just needs to type in a 
 
 There are two ways to test this:
 
-* The easy way: just go to the app page and test it [Link text](hyperlink).
+* The easy way: just go to the app page and test it [BookShelf](https://books-search-sergioardz.herokuapp.com/).
 * The not that easy way: you would need to clone/download the repository and install the necessary dependencies with the command “npm install” and do not forget about the DB settings.
 
 ## Where users can get help with your project - Built With:
@@ -58,4 +58,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## URLS
 
 * [Github project](https://github.com/sergioardz/books-search)
-* [Heroku project](hyperlink)
+* [Heroku project](https://books-search-sergioardz.herokuapp.com/)
