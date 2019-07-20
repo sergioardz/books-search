@@ -13,7 +13,20 @@ if (process.env.NODE_ENV === "production") {
 
 // Database Connection
 const mongoose  = require("mongoose");
-const mongoURL = process.env.MONGODB_URI || "mongodb://user:manzana1@ds353007.mlab.com:53007/heroku_nwpsmfdg";
+
+
+// Local
+// const mongoURL = process.env.PROD_MONGODB || "mongodb://localhost:27017/bookssearch";
+// mongoose.connect(mongoURL, {useNewUrlParser: true})
+//   .then(() => {
+//     console.log("Successfully connected to Mongo DB.");
+//   })
+//   .catch((err) => {
+//     console.log(`Error connecting to Mongo DB: ${err}`)
+//   });
+
+// mLab deployed...
+const mongoURL = process.env.MONGODB_URI || "mongodb+srv://user:manzana1@cluster0-olmdw.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(mongoURL, {useNewUrlParser: true})
   .then(() => {
     console.log("Successfully connected to Mongo DB.");
@@ -28,3 +41,13 @@ require("./routes/api-routes")(app);
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
+
+// "scripts": {
+//   "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+//   "start:prod": "node server.js",
+//   "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+//   "client": "cd client && npm run start",
+//   "install": "cd client && npm install",
+//   "build": "cd client && npm run build",
+//   "heroku-postbuild": "npm run build"
+// },
