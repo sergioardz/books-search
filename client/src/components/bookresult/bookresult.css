@@ -6,7 +6,11 @@
     text-align: justify;
 }
 
-#title, #author, #description {
+/* #title, #author, #description {
+    font-size: calc(0.5em + 0.5vw);
+} */
+
+.card-content {
     font-size: calc(0.5em + 0.5vw);
 }
 

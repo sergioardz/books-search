@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-// Database
+// Database Connection
 const mongoose  = require("mongoose");
 const mongoURL = process.env.PROD_MONGODB || "mongodb://localhost:27017/bookssearch";
 mongoose.connect(mongoURL, {useNewUrlParser: true})

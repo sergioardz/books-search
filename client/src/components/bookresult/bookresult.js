@@ -64,6 +64,7 @@ class BookResult extends React.Component {
                                         // if link to book exists include View button else do not
                                         (this.props.link) ? <a href={this.props.link} target="_blank" rel="noopener noreferrer"><button className="button is-small is-dark is-outlined" type="button" name="view">View</button></a> : null
                                     }
+                                    {' '}
                                     {
                                         // if this.props.path is "/" display save button else display Delete button
                                         (this.props.path === "/") ? <button className="button is-small is-dark is-outlined" type="button" name="save" onClick={this.handleSaveClick} disabled={this.state.saved}>{(this.state.saved) ? "Saved" : "Save"}</button> : <button className="button is-small is-dark is-outlined" type="button" name="Delete" onClick={this.handleDeleteClick} disabled={this.state.deleted}>Delete</button>
@@ -72,14 +73,14 @@ class BookResult extends React.Component {
                             </div>
                         </div>
                     </nav>
-                    <p id="author">Writen by {(this.props.authors) ? this.props.authors.join(", ") : "N/A"}</p>
+                    <p id="author">Written by <strong>{(this.props.authors) ? this.props.authors.join(", ") : "N/A"}</strong></p>
                     <div className="columns">
                         <div className="column is-2">
                             {(this.props.img) ? <img src={
                                 // if smallthubmail exists on this.props.img use that else if thumbnail exists on this.props.img use that else leave src empty
                                 (this.props.img.smallThumbnail) ? this.props.img.smallThumbnail :
                                     (this.props.img.thumbnail) ? this.props.img.thumbnail : ""
-                            } alt="book cover" width="180px" height="180px" /> : null}
+                            } alt="book cover" /> : null}
                         </div>
                         <div className="column is-10">
                             <p id="description">{(this.props.description)? this.props.description: "N/A"}</p>
@@ -92,8 +93,3 @@ class BookResult extends React.Component {
 }
 
 export default BookResult;
-
-// <button className="button is-small is-dark is-outlined">View</button> & nbsp;
-// <button className="button is-small is-dark is-outlined">Save</button>
-// <a id="title" href="#"><p>Link to Title</p></a>
-// <img src="https://via.placeholder.com/180" width="180px" height="180px" />

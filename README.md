@@ -1,22 +1,31 @@
 # Project Title
 
-Books Search.
+BookShelf - A Books Search App.
 
 ## Screenshots / Demo
+Home Page
+![Demo1](client/src/images/HomePage.png "Homepage")
 
-![Displayed Text](hyperlinkofimgorgif "Text above image")
+Search Results
+![Demo2](client/src/images/SearchResults.png "Search Results")
+
+Saved Books
+![Demo3](client/src/images/SavedBooks.png "Saved Books")
+
+API Books
+![Demo4](client/src/images/Api-Books.png "Api Books")
 
 ## What the project does
 
-Insert details here.
+BookShelf let the user search for and save any Books of interest using the Google Books Search app.
 
 ## Why the project is useful
 
-Insert details here.
+It is a nice way to get a quick response when searching for books or even to make a wish/buy/read-list for books as the app lets you saved titles.
 
 ## How does it works
 
-Insert details here.
+It is very easy and intuitive to use this app, the user just needs to type in a title on the search input form and hit the search button, once results are displayed the user can either go to the book by using the view button or save the book by using the save button. The user can always go to the Saved Page in order to see all of the saved books and even decide and delete a title upon reques by using the delete button.
 
 ## How can I use it
 
@@ -31,21 +40,12 @@ There are two ways to test this:
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Javascript](https://www.javascript.com/)
 * [React](https://reactjs.org/docs/getting-started.html)
-* [jQuery](https://jquery.com/)
 * [NodeJs](https://nodejs.org/en/)
 * [Express](https://www.npmjs.com/package/express)
-* [Bootstrap](https://getbootstrap.com/)
 * [Bulma](https://bulma.io/documentation/)
-* [Mysql](https://www.npmjs.com/package/mysql)
-* [Sequelize](http://docs.sequelizejs.com/)
 * [MongoDB](http://mongodb.github.io/node-mongodb-native/)
 * [Mongoose](https://mongoosejs.com/)
-* [express-session](https://www.npmjs.com/package/express-session)
-* [bcrypt](https://www.npmjs.com/package/bcrypt)
-* [passport](https://www.npmjs.com/package/passport)
-* [pdfmake](https://www.npmjs.com/package/pdfmake)
 * [axios](https://www.npmjs.com/package/axios)
-* [cheerio](https://www.npmjs.com/package/cheerio)
 
 ## Who maintains and contributes to the project - Author:
 
@@ -57,5 +57,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## URLS
 
-* [Github project](hyperlink)
+* [Github project](https://github.com/sergioardz/books-search)
 * [Heroku project](hyperlink)

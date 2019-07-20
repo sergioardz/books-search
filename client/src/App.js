@@ -16,7 +16,7 @@ class App extends Component {
         <Hero />
         <Switch>
           <Route exact path="/" component={Search}/>
-          <Route path="/saved" component={Saved}/>Ï
+          <Route path="/saved" component={Saved}/>
         </Switch>
         <Footer />
       </div>
