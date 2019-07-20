@@ -1,20 +1,20 @@
 import React from "react";
 import "./search.css";
 
-const Search = props => (
+const SearchForm = props => (
         <div className="card">
             <div className="card-content">
                 <p className="is-3" id="search"><strong>Book:</strong></p>
                 <div className="field has-addons">
                     <p className="control">
-                        <input type="text" className="input" size="144" placeholder="Enter Title..." />
+                        <input type="text" name="bookInput" id="bookInput" form="bookSearch" onChange={(e) => props.handleChange(e)} className="input" size="144" placeholder="Enter Title..." required/>
                     </p>
                     <p className="control">
-                        <a href="" className="button is-dark">Search</a>
+                        <button type="submit" onClick={(e) => props.handleSearchClick(e)} className="button is-dark">Search</button>
                     </p>
                 </div>
             </div>
         </div>
 );
 
-export default Search;
+export default SearchForm;
